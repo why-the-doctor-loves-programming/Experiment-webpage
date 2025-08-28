@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站</title>
+    <link rel="stylesheet" href="./index.css">
+        <!-- 在 <head> 中添加 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="bar-header">
+                <div class="logo"></div>
+                <span>目录</span>
+            </div>
+            <div class="bar-menu">
+                <ul>
+                    <li>
+                        <a href="#" class="nav-item active" id="home">
+                            <div class="nav-icon"><i class="fas fa-home"></i></div>
+                            <span class="nav-text">首页</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item" id="about">
+                            <div class="nav-icon"><i class="fas fa-user"></i></div>
+                            <span class="nav-text">关于我们</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item has-submanu" id="services">
+                            <div class="nav-icon"><i class="fas fa-cogs"></i></div>
+                            <span class="nav-text">插件服务</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#" class="nav-item sub" id="SPH"><span>智慧公卫</span></a></li>
+                            <li><a href="#" class="nav-item sub" id="SC"><span>计算器</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item" id="contact">
+                            <div class="nav-icon"><i class="fas fa-envelope"></i></div>
+                            <span class="nav-text">联系</span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="overlay">
+            <div class="page active" id="page-home">
+                <div class="content1">
+                    <h1>欢迎来到我的网站</h1>
+                    <p>这是一个简单的侧边导航栏示例。<br>
+                        点击左侧的菜单项可以切换内容区域的显示。
+                    </p>
+                </div>
+            </div>
+
+            <div class="page" id="page-about">
+            <h1>关于我们</h1>
+            <p>这个是网页作者的插件实验室。</p>
+             </div>
+
+            <div class="page" id="page-services">
+            <h1>插件实验区域</h1>
+            <p>请点击相应的实验区域</p>
+             </div>
+
+            <button class="collapse-btn" id="collapseBtn">----</button>
+
+        </div>
+    </div>
+        
+    <script src="./index.js"></script>
+</body>
+</html>
